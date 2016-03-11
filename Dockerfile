@@ -1,5 +1,5 @@
-FROM fedora:22
-MAINTAINER Michal Karm Babacek <karm@email.cz>
+FROM fedora:23
+MAINTAINER Takuya Noguchi <tak.noguchi.iridge@gmail.com>
 
 # TODO: We install stuff that's superfluous at runtime.
 #       Let's move build time dependencies to the build layer
