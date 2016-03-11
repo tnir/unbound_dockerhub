@@ -6,9 +6,9 @@ This is a devel build of Unbound server with Python scripting support. It compil
 
 # Example usage
 
-    docker pull karm/unbound-dockerhub
+    docker pull tnir/unbound-dockerhub
 
-    docker run -d -p 127.0.0.1:53535:53 -p 127.0.0.1:53535:53/udp -i --name unbound karm/unbound-dockerhub
+    docker run -d -p 127.0.0.1:53535:53 -p 127.0.0.1:53535:53/udp -i --name unbound tnir/unbound-dockerhub
 
     docker logs unbound
 
