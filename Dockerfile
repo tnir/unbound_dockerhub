@@ -15,7 +15,7 @@ ENV DEF_CFG ${PYTHON_SITE_PKG}/unbound.conf
 ENV UNBOUND_BRANCH master
 
 # TODO: Why wget instead of ADD? Cache.
-RUN  wget https://github.com/Karm/unbound/archive/${UNBOUND_BRANCH}.zip && unzip ${UNBOUND_BRANCH}.zip && cd unbound-${UNBOUND_BRANCH} && \
+RUN  wget https://github.com/jedisct1/unbound/archive/${UNBOUND_BRANCH}.zip && unzip ${UNBOUND_BRANCH}.zip && cd unbound-${UNBOUND_BRANCH} && \
      ./configure --prefix=/opt/unbound-build --with-pythonmodule=${PYTHON_SITE_PKG} && make && make install && make clean && \
      cp ./pythonmod/doc/examples/example0-1.py /opt/python_script.py && \
      rm -rf /opt/unbound-${UNBOUND_BRANCH} /opt/${UNBOUND_BRANCH}.zip
