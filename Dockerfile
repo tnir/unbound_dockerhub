@@ -3,7 +3,7 @@ MAINTAINER Takuya Noguchi <tak.noguchi.iridge@gmail.com>
 
 # TODO: We install stuff that's superfluous at runtime.
 #       Let's move build time dependencies to the build layer
-RUN yum -y update && yum -y install wget expat-devel expatpp-devel file unzip python-devel swig make autoconf gcc sed binutils gawk openssl-devel openssl-libs byacc bash && yum clean all
+RUN dnf -y update && dnf -y install wget expat-devel expatpp-devel file unzip python-devel swig make autoconf gcc sed binutils gawk openssl-devel openssl-libs byacc bash && yum clean all
 
 # TODO: How about ONBUILD?
 #ONBUILD 
