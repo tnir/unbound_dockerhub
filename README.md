@@ -1,4 +1,6 @@
 # unbound_dockerhub
+[![CircleCI](https://circleci.com/gh/tnir/unbound_dockerhub.svg?style=svg)](https://circleci.com/gh/tnir/unbound_dockerhub)
+
 Unbound dev build on Dockerhub; build from sources.
 
 # Description
