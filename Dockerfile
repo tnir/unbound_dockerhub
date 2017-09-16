@@ -1,5 +1,5 @@
 FROM fedora:24
-MAINTAINER Takuya Noguchi <tak.noguchi.iridge@gmail.com>
+MAINTAINER Takuya Noguchi <takninnovationresearch@gmail.com>
 
 # TODO: We install stuff that's superfluous at runtime.
 #       Let's move build time dependencies to the build layer
