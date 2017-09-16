@@ -1,4 +1,4 @@
-FROM fedora:24
+FROM fedora:26
 MAINTAINER Takuya Noguchi <takninnovationresearch@gmail.com>
 
 # TODO: We install stuff that's superfluous at runtime.
