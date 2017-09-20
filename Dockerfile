@@ -12,7 +12,7 @@ WORKDIR /opt
 RUN mkdir /opt/unbound-build -p
 ENV PYTHON_SITE_PKG /opt/unbound-build/etc/unbound/
 ENV DEF_CFG ${PYTHON_SITE_PKG}/unbound.conf
-ENV UNBOUND_REF a14d8b97feb906315deadbf8e68a1e59ddfb7698
+ENV UNBOUND_REF 93943703936fa54133143eca29c805360ff2fb66
 
 # TODO: Why wget instead of ADD? Cache.
 RUN  wget https://github.com/jedisct1/unbound/archive/${UNBOUND_REF}.zip && unzip ${UNBOUND_REF}.zip && cd unbound-${UNBOUND_REF} && \
